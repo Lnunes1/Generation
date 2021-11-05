@@ -1,0 +1,200 @@
+{
+	
+// Exercicio 1
+	funcao inicio()
+	{
+ 
+		inteiro dias, meses, anos, idade
+		
+		escreva("quantos anos voce tem: ")
+		leia(anos)
+		
+		escreva("quantos meses voce tem: ")
+		leia(meses)
+		
+		escreva("quantos dias voce tem: ")
+		leia(dias)
+
+		idade = (anos * 365) + (meses * 30) + dias
+
+		escreva("sua idade em dias é: ", idade)
+	}
+}
+
+
+{
+	
+// Exercicio 2
+	funcao inicio()
+	{
+ 
+	inteiro dia,dias,meses,anos
+	escreva("quantos dias voce tem: ")
+	leia(dias)
+
+	anos = (dias / 365)
+	meses= (dias% 365)/30
+	dia= (dias% 365)%30
+	
+
+	escreva(" sua idade em anos é: ", anos)
+	
+
+	escreva(" sua idade em meses é: ", meses)
+
+
+	escreva(" sua idade em dias é: ",dia)
+	
+	
+		
+	}
+}
+
+
+{
+	
+// Exercicio 3
+	funcao inicio()
+	{
+		inteiro segundo,segundos,minutos,horas
+	escreva("quantos segundos de duraçao: ")
+	leia(segundos)
+
+	horas = (segundos / 3600)
+	minutos = (segundos% 3600)/60
+	segundo= (segundos% 3600)%60
+	
+
+	escreva("duraçao em horas: ", horas)
+	
+
+	escreva("\nduraçao em minutos: ", minutos)
+
+
+	escreva("\nduraçao em segundo: ",segundo)
+	
+	}
+}
+
+
+{
+	
+// Exercicio 4
+	inclua biblioteca Matematica --> mat
+	funcao inicio()
+	{
+	real a,b,c,D,R,S
+	escreva("valor a: ")
+	leia(a)
+	escreva("valor b: ")
+	leia(b)
+	escreva("valor c: ")
+	leia(c)
+
+	
+	R = mat.potencia ((a+b), 2.0)
+	S = mat.potencia ((b+c), 2.0)
+	D = R + S 
+	D = D / 2
+	escreva("valor de D é: " + D)
+
+	}
+}
+
+
+{
+	
+// Exercicio 5
+	funcao inicio()
+	{
+		real nota1,nota2,nota3,media
+		escreva("primeira nota: ")
+		leia(nota1)
+
+		escreva("segunda nota: ")
+		leia(nota2)
+
+		escreva("terceira nota: ")
+		leia(nota3)
+
+		
+		media = (nota1 + nota2 + nota3) / 3
+		escreva("sua media é: ", media)
+		}
+}
+
+
+{ //Exercicio 6
+	inclua biblioteca Matematica --> mat
+	funcao inicio() {
+
+	real x1, x2, y1, y2
+	real p1, p2 //---> dois pontos
+	real d
+
+	escreva("Digite o valor de X do primeiro ponto: ")
+	leia(x1)
+
+	escreva("Digite o valor de Y do primeiro ponto: ")
+	leia(y1)
+
+	escreva("Digite o valor de X do segundo ponto: ")
+	leia(x2)
+
+	escreva("Digite o valor de Y do segundo ponto: ")
+	leia(y2)
+
+	p1 = mat.potencia((x2-x1), 2.0)
+	p2 = mat.potencia((y2-y1), 2.0)
+	d = mat.raiz(p1 + p2, 2.0)
+
+	escreva("A distancia entre os dois pontos é: " , d)
+	}
+}
+
+//Exercicio 7
+	funcao inicio() {
+
+		//Coeficientes
+		real a, b, c, d, E, f
+		real x, y
+
+		escreva("Digite o valor de A: ")
+		leia(a)
+
+		escreva("Digite o valor de B: ")
+		leia(b)
+
+		escreva("Digite o valor de C: ")
+		leia(c)
+
+		escreva("Digite o valor de D: ")
+		leia(d)
+
+		escreva("Digite o valor de E: ")
+		leia(E)
+
+		escreva("Digite o valor de F: ")
+		leia(f)
+
+		x = ((c*E) - (b*f)) / ((a*E) - (b*d))
+		y = ((a*f) - (c*d)) / ((a*E) - (b*d))
+
+		escreva("O valor de X é: " + x + " e o valor de Y é: " + y)
+	}
+}
+
+{
+	
+//Exercicio 8
+	funcao inicio()
+	{
+		inteiro custo,total
+		escreva("custo da fabrica: ")
+		leia(custo)
+
+		total = ((custo / 100 * 28) + ((custo / 100) * 45) + custo)
+
+		 escreva("custo do veiculo para o consumidor: ", total, " reais.")
+	}
+}

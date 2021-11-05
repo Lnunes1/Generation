@@ -1,0 +1,242 @@
+programa
+{
+	
+//Exercicios 1
+	funcao inicio()
+	{
+		  real quilos,multa
+
+   	escreva("Digite a quantidade de tomates: ")
+    leia(quilos)
+
+    se(quilos > 50.0) {
+        multa = (quilos - 50.0) * 4
+        escreva("Você tera que pagar " + multa + "reias em multa")
+    }
+    senao{
+        escreva("Você não sera multado pelos tomates")
+		
+    }
+		
+		
+		
+	}
+}
+
+
+programa {
+
+    //Exercicio 2
+       funcao inicio()
+ {
+
+       inteiro C
+       real N, salario
+
+       escreva("Digite o código do operário? ")
+       leia(C)
+       escreva("\nQuantas horas ele trabalhou? ")
+       leia(N)
+
+       se(N <= 50.0){
+       salario = N * 10
+       escreva("\nSeu salário é de: " + salario + " reais.")
+       }
+
+       senao {
+       salario = (N - 50.0) * 20
+       salario = salario + 500
+       escreva("\nSeu salário é de: " + salario + " reais.")
+    }
+    }
+}
+
+
+programa
+{
+          //Exercício 3:
+          inclua biblioteca Matematica --> mat
+		funcao inicio(){
+		inteiro numero1, numero2, numero3, numero4
+	     inteiro resultado1, resultado2, resultado3, resultado4
+		
+		escreva("Digite o primeiro número: ")
+		leia(numero1)
+		
+		escreva("Digite o segundo número: ")
+		leia(numero2)
+		
+		escreva("Digite o terceiro número: ")
+		leia(numero3)
+		
+		escreva("Digite o quarto número: ")
+		leia(numero4)
+		
+		resultado1 = mat.potencia(numero1, 2)
+		
+		resultado2 = mat.potencia(numero2, 2)
+		
+		resultado3 = mat.potencia(numero3, 2)
+		
+		resultado4 = mat.potencia(numero4, 2)
+		se(resultado3 >= 1000){
+		escreva("O quadrado do terceiro número é: ",resultado3)
+	}
+		senao{
+		escreva("\nResultado do quadrado do primeiro número: ",resultado1)
+		escreva("\nResultado do quadrado do segundo número: ",resultado2)
+		escreva("\nResultado do quadrado do terceiro número: ",resultado3)
+		escreva("\nResultado do quadrado do quarto número: ",resultado4)
+}
+}
+}
+
+
+programa{
+		//Exercicio 4
+    			
+    			
+    			funcao inicio(){
+
+    			inteiro numero,resultado
+
+    			escreva("Digite um número: ")
+   		     leia(numero)
+
+        		se(numero >= 0) {
+        		escreva("O número é positivo")
+            }
+        		senao{
+        		escreva("O número é negativo")
+        			}
+
+   			resultado = numero % 2
+
+        		se(resultado == 0){
+        		escreva("\ne é par")
+        	}
+        		senao{
+        		escreva("\ne é ímpar")
+        		}
+
+
+    }
+}
+
+
+programa
+{
+
+    //Exercicio 5
+    funcao inicio()
+{
+
+        	real ip
+
+        	escreva("Leia o indice de poluição: ")
+        	leia(ip)
+
+        	se(ip >= 0.05 e ip<=0.25){
+            escreva("Indice aceitável...")
+        	}
+        	senao se(ip>0.25 e ip <= 0.3){
+            escreva("Notifique as empresas do primeiro grupo....")
+        	}
+        	senao se(ip>0.3 e ip <= 0.4){
+            escreva("Notifique as empresas do primeiro e segundo grupo....")
+        }
+        	senao se(ip>0.4 e ip <= 0.5){
+            escreva("Todos os grupos serão notificados!!")
+        }
+        	senao{
+            escreva("Indice sem classificação!!")
+        }
+    }
+}
+
+
+programa {
+
+   //Exercicio 6
+    
+    funcao inicio() {
+
+        inteiro idade
+
+        escreva(" idade do nadador? ")
+        leia(idade)
+
+
+        se(idade >= 5 e idade <= 7){
+            escreva("A categoria do nadador é infantil A")
+        }
+        senao se(idade >= 8 e idade <= 11) {
+            escreva("A categoria do nadador é infantil B")
+        }
+        senao se(idade >= 12 e idade <= 13){
+            escreva("A categoria do nadador é Juvenil A")
+        }
+        senao se(idade >= 14 e idade <= 17){
+            escreva("A categoria do nadador é Juvenil B")
+        }
+        senao se(idade >= 18){
+            escreva("A categoria do nadador é um adulto")
+        }
+        senao {
+            escreva("Essa pessoa não tem idade para ser nadador")
+        }
+
+    }
+}
+
+
+programa
+{
+ 
+	
+//Exercicio 7
+	funcao inicio()
+	{
+	 inteiro altura, base 
+	 inteiro area = 0
+
+	 escreva("Valor da base: ")
+	 leia(base)
+
+	 escreva("Valor da altura: ")
+	 leia(altura)
+
+	 se(base > 0 e altura > 0){
+	 	area = (base * altura) / 2
+	 
+	 	escreva("A area é: " + area)
+	 }
+	 senao{
+	 	escreva("coloque um numero possitivo")
+	 }
+	}
+}
+
+
+programa
+{
+ 
+	
+//Exercicio 8
+	funcao inicio()
+	{
+	 inteiro N 
+	 
+	 escreva("Valor de N: ")
+	 leia(N)
+
+	 se(N >= 100){
+	 	escreva("O valor de N é: " + N) 
+	 
+	 	
+	 }
+	 senao{
+	 	escreva("O valor sera 0")
+	 }
+	}
+}

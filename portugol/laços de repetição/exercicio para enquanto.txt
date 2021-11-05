@@ -1,0 +1,167 @@
+programa
+ {
+    //Exercicio 1
+    
+    		funcao inicio()
+ {
+
+    		real sal, somasal = 0.0, somanf = 0.0, 
+    		mediasal, medianf, maiorsal = 0.0, 
+    		perc100 = 0.0, cont100 = 0.0
+
+    		inteiro nf, hab = 20, x 
+
+    		para(x=1; x <= hab; x++){
+        	escreva("Digite o salário do habitante: ")
+        	leia(sal)
+
+        	escreva("Digite a quantidade de filhos: ")
+        	leia(nf)
+
+        	somasal = somasal + sal
+        	somanf  = somanf + nf
+
+        	se(sal > maiorsal){
+            maiorsal = sal
+        }
+
+        	se(sal <= 100){
+            cont100++
+        }
+    }
+        	mediasal = somasal / hab
+        	medianf  = somanf  / hab
+
+        	perc100 = (cont100*100) / hab
+
+        	escreva("\nMédia salárial dos habitantes: " + mediasal)
+        	escreva("\nMédia de filhos dos habitantes: " + medianf)
+        	escreva("\nMaior salário: " + maiorsal)
+        	escreva("\nPorcentagem de habitantes até R$ 100.00: " + perc100 + "%")
+    }
+}
+
+
+programa
+{
+	
+//Exercicio 2
+	
+	funcao inicio()
+	{
+		inteiro soma = 0, cont, maior = 0, impar, multiplo
+
+		para(cont = 1; cont <= 500; cont++)
+
+		{
+			impar = cont % 2
+			multiplo = cont % 3
+
+			se(impar == 1 e multiplo == 0){
+				soma = soma + cont
+			}
+		}
+		escreva("soma dos numeros impares e multiplos de 3 e igual a " + soma)
+	}
+	
+}
+
+
+programa
+{
+	// Exercício 3 --> enquanto:	
+	
+	funcao inicio(){
+
+		inteiro pos, neg, num, numTotal = 0
+		real med, soma = 0.0
+
+		escreva("Digite um número: ")
+		leia(num)
+
+		enquanto(num > 0){
+			numTotal++
+			soma = soma + num
+			med = soma / numTotal
+			
+			escreva("\nA soma de todos os númers digitados é: ", soma)
+			escreva("\nA média de todos os números digitados é :", med)
+			escreva("\nDigite um número: ")
+			leia(num)
+			
+			
+		}
+	}
+}
+
+
+programa
+{
+	
+//Exercicio 4
+	
+	funcao inicio()
+	{
+		inteiro N, resultado, contador, final
+
+		final = 100
+		contador = 0
+          
+          escreva("escreva um numero: ")
+		leia(N)
+		
+		enquanto(N < final){
+			N = N * 3 
+			escreva("\n" + N)
+		}
+		
+		
+	}
+}
+
+
+programa {
+   
+    //Exercicio 5
+    funcao inicio() {
+
+    inteiro valor, cont =233
+
+    escreva(cont + "\n")
+
+        faca {
+            se(cont >= 300 e cont <= 400){
+                cont += 3
+                escreva(cont + "\n")
+            }
+            senao{
+                cont += 5
+                escreva(cont + "\n")
+                }
+        }
+        enquanto(cont <= 456)
+    }
+
+}
+
+
+programa
+{
+      //Exercicio 6
+       
+    funcao inicio()
+    {
+        inteiro num, num2 = 0, soma = 0
+
+        escreva("Digite o valor limite: ")
+        leia(num)
+
+        faca{
+            num2++
+            soma = soma + num2
+        }
+        enquanto(num2 < num)
+
+        escreva("O valor da soma de todos os numeros até o valor limite é: " , soma)
+    }
+}
